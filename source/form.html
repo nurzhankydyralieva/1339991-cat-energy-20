@@ -9,7 +9,7 @@
 <body class="page__body">
   <header class="page-header page__header">
     <a class="page-header__logo">
-      <img src="https://via.placeholder.com/150x150" width="202" height="60" alt="cat-energy-logo">
+      <img src="https://via.placeholder.com/150x150" width="202" height="60" alt="Логотип Cat-Energy">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -44,13 +44,81 @@
     </nav>
   </header>
   <main>
+    <section>
+      <h1>Подбор программы</h1>
+      <p>заполните анкету и мы подберем<br>программу питания для вашего кота</p>
+      <form class="message-form" action="https://echo.htmlacademy.ru" method="post">
+        <label for="name">Имя:</label>
+        <input type="text" name="catName" id="name" placeholder="Барсик" required>
+        <label for="weight">Вес(кг):</label>
+        <input type="text" name="catWeight" id="weight" placeholder="7" required>
+        <label for="year">Возраст(лет):</label>
+        <input type="text" name="catYear" id="year" placeholder="7" required>
+      </form>
+      <div class="filter-breadcrumbs">
+        <ul class="breadcrumbs">
+          <li class="filter-radio">
+            <input class="filter-radio-input" type="radio" name="grid" value="weightLost" id="weightLost" checked>
+            <label for="weightLost">Похудение</label>
+          </li>
+          <li class="filter-radio">
+            <input class="filter-radio-input" type="radio" name="grid" value="weightGain" id="weightGain">
+            <label for="weightGain">Набор массы</label>
+          </li>
+          <li class="filter-radio">
+            <input class="filter-radio-input" type="radio" name="grid" value="advice" id="advice">
+            <label for="advice">Не знаю (нужен ваш совет)</label>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <h2>Контактные данные<br>(владельца кота)</h2>
+      <form class="message-form" action="https://echo.htmlacademy.ru" method="post">
+        <label for="email">E-mail:</label>
+        <input type="text" name="catEmail" id="email" placeholder="Kuklachev@gmail.com" required>
+        <label for="tell">Телефон:</label>
+        <input type="number" name="catTell" id="tell" placeholder="8(960)900-60-90" required>
+        <label for="comment-field">Комментарий</label>
+        <textarea name="message-input" name="comment" id="comment-field"
+          placeholder="Расскажите обо всех повадках кота"></textarea>
+      </form>
+      <fieldset class="breadcrumbs-filter-checkbox">
+        <legend>Дополнительно</legend>
+        <ul>
+          <li class="filter-checkbox">
+            <input type="checkbox" name="product" id="field" checked>
+            <label for="field">Сахарозаменитель</label>
+          </li>
+          <li class="filter-checkbox">
+            <input type="checkbox" name="product2" id="field">
+            <label for="field">Питьевая вода</label>
+          </li>
+          <li class="filter-checkbox">
+            <input type="checkbox" name="product3" id="field">
+            <label for="field">Молоко</label>
+          </li>
+          <li class="filter-checkbox">
+            <input type="checkbox" name="product4" id="field">
+            <label for="field">Витамины</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="benefits-button" type="button">Отправить заявку</button>
+      <p class="address-slogan__map">Обязательные поля</p>
+    </section>
 
+    <div class="address address-slogan">
+      <p class="address-slogan__text">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
+      <p>ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+      <img src="https://via.placeholder.com/150x150">
+    </div>
   </main>
   <footer class="page-footer page__footer">
     <div class="page-footer--wrapper">
       <div class="page-footer__logo">
         <a>
-          <img src="https://via.placeholder.com/150x150" width="202" height="60" alt="cat-energy-text">
+          <img src="https://via.placeholder.com/150x150" width="202" height="60" alt="Логотип Cat-Energy">
         </a>
       </div>
       <div class="page-footer__social social">
@@ -68,7 +136,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/logo.png" width="27"
-            height="34" alt="logo html">HTML Academy</a>
+            height="34" alt="Логотип htmlacademy">HTML Academy</a>
       </div>
     </div>
   </footer>
