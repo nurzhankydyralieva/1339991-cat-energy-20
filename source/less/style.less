@@ -1,4 +1,27 @@
 // Начните писать стили здесь
+@import "variables.less";
+@import "program-item.less";
+@import "page-main.less";
+@import "page-catalog.less";
+@import "mixins.less";
+@import "features.less";
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
 body {
-  background: red;
+  min-width: 1440px;
+  background-color: @primary;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
 }
