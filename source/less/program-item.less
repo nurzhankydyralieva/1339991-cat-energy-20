@@ -1,20 +1,35 @@
 // main: style.less
 .program-item {
-  background-color: #F2F2F2;
-  width: 280px;
-  height: 266px;
   font-style: normal;
   font-weight: normal;
-  
+  background-color: @basic-grey;
 
+  .progrem-item__container {
+    display: block;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 18px;
+  }
   .program-item__name {
     color: @secondary;
     font-size: 24px;
     line-height: 37px;
     text-transform: uppercase;
+    padding-left: 90px;
+    &--slim {
+      background: url("@{img}icon-cat-slim.svg") no-repeat;
+      width: 36px;
+      height: 50px;
+    }
+    &--weight {
+      background: url("@{img}icon-cat-pro.svg") no-repeat;
+      width: 67px;
+      height: 28px;
+    }
   }
   .program-item__text {
-    color: #444444;
+    color: @color-text;
     font-size: 14px;
     line-height: 18px;
   }
@@ -24,8 +39,5 @@
     text-decoration: none;
     text-transform: uppercase;
     color: @secondary;
-
   }
-
 }
-

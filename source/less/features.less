@@ -1,7 +1,38 @@
 // main: style.less
-.features h3 {
- color: red;
-
+.description {
+  font-style: inherit;
+  font-size: 36px;
+  line-height: 40px;
+  color: @secondary;
 }
 
+.feature {
+  background-color: @primary;
+  .description-list {
+    list-style: none;
+    font-size: 14px;
+    line-height: 18px;
+    color: @color-text;
+    padding-left: 100px;
+  }
+}
 
+.feature-description {
+  background-color: @basic-grey;
+
+  p {
+    font-size: 14px;
+    line-height: 18px;
+    color: @color-text;
+  }
+  .cost {
+    font-size: 14px;
+    line-height: 20px;
+    color: @secondary;
+    text-transform: uppercase;
+  }
+  .kg {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}

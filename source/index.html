@@ -54,28 +54,33 @@
     </header>
 
     <main class="page-main">
-      <section class="programs">
-        <h1>Функциональное питание для котов</h1>
-        <p>занялся собой? займись котом!</p>
-
-        <a class="food" href="form.html">Подобрать программу</a>
+      <section>
+        <div  class="programs">
+          <h1>Функциональное питание для котов</h1>
+          <p>занялся собой? займись котом!</p>
+          <a class="food" href="form.html">Подобрать программу</a>
+      </div>
       </section>
 
       <section>
         <h2 class="visually-hidden">Программы питания</h2>
         <div class="program-item">
-          <h3 class="program-item__name">Похудение</h3>
-          <p class="program-item__text">
-            Ваш кот весит больше собак и<br />почти утратил способность
-            лазить<br />по деревьям? Пора на диету! Cat<br />Energy Slim поможет
-            вашему<br />питомцу сбросить лишний вес.
-          </p>
-          <a class="program-item__link" href="catalog.html">
-            Каталог slim
-          </a>
+          <div class="progrem-item__container">
+            <h3 class="program-item__name program-item__name--slim ">Похудение</h3>
+            <p class="program-item__text">
+              Ваш кот весит больше собак и<br />почти утратил способность
+              лазить<br />по деревьям? Пора на диету! Cat<br />Energy Slim
+              поможет вашему<br />питомцу сбросить лишний вес.
+            </p>
+            <a class="program-item__link" href="catalog.html">
+              Каталог slim
+            </a>
+            </div>
         </div>
         <div class="program-item">
-          <h3 class="program-item__name">Набор массы</h3>
+          <div class="progrem-item__container">
+          <div class="program-item__container">
+          <h3 class="program-item__name program-item__name--weight">Набор массы</h3>
           <p class="program-item__text">
             Заработать авторитет среди<br />дворовых котов и даже собак?<br />Серия
             Cat Energy Pro поможет<br />вашему коту нарастить<br />необходимые
@@ -84,32 +89,33 @@
           <a class="program-item__link" href="catalog.html">
             Каталог pro
           </a>
+          </div>
         </div>
       </section>
 
-      <section class="features">
-        <h3>Как это работает</h3>
+      <section>
+        <h3 class="description">Как это работает</h3>
         <div class="feature">
-          <ul class="features-list descripton-list">
-            <li class="descripton-list__item">
+          <ul class="features-list description-list">
+            <li class="description-list__item">
               <p>
                 Функциональное питание<br />содержит только полезные<br />питательные
                 вещества.
               </p>
             </li>
-            <li class="descripton-list__item">
+            <li class="description-list__item">
               <p>
                 Выпускается в виде порошка,<br />который нужно лишь залить<br />кипятком
                 и готово.
               </p>
             </li>
-            <li class="descripton-list__item">
+            <li class="description-list__item">
               <p>
                 Замените один-два приема<br />обычной еды на наше<br />функциональное
                 питание.
               </p>
             </li>
-            <li class="descripton-list__item">
+            <li class="description-list__item">
               <p>
                 Уже через месяц<br />наслаждайтесь изменениями<br />к лучшему
                 вашего питомца!
@@ -119,20 +125,21 @@
         </div>
       </section>
       <section>
-        <h3>Живой пример</h3>
+        <div class="feature-description">
+        <h3 class="description">Живой пример</h3>
         <p>
           Борис сбросил 5 кг за 2 месяца, просто<br />
           заменив свой обычный корм на Cat<br />Energy Slim. Отличный результат
           без<br />изнуряющих тренировок! При этом он не<br />менял свои
           привычек и по-прежнему<br />спит по 16 часов в день.
         </p>
-        <span>5 кг</span>
+        <span class="kg">5 кг</span>
         <span>снижение веса</span>
-        <span>60 дней</span>
+        <span class="kg">60 дней</span>
         <span>затрачено времени</span>
-        <p>затраты на питание: 15 000 руб.</p>
+        <p class="cost">затраты на питание: 15 000 руб.</p>
         <img
-          src="https://via.placeholder.com/150x150"
+          src="./img/before-mobile@1x.png"
           width="311"
           height="232"
           alt="Cat before and after"
@@ -146,6 +153,7 @@
               </div>
             </div>
           </div>
+          </div>
         </div>
       </section>
     </main>
@@ -157,18 +165,19 @@
         <p class="page-footer__address-map">
           ул. Большая<br />Конюшенная, д. 19/8<br />Санкт-Петербург
         </p>
-        <img src="https://via.placeholder.com/150x150" alt="Карта" />
       </div>
-      <div class="page-footer__logo">
-        <a>
-          <img
-            src="https://via.placeholder.com/150x150"
-            width="202"
-            height="60"
-            alt="Логотип Кэт энерджи"
-          />
-        </a>
-      </div>
+      <img src="./img/bg-map-mobile@1x.png" alt="Карта" />
+      <div class="page-footer__container">
+        <div class="page-footer__logo">
+          <a>
+            <img
+              src="./img/logo-footer.svg"
+              width="202"
+              height="60"
+              alt="Логотип Кэт энерджи"
+            />
+          </a>
+        </div>
       <div class="social page-footer__social">
         <ul class="social__list">
           <li class="social__item">
@@ -190,13 +199,13 @@
         <a
           class="copyright__text"
           href="https://htmlacademy.ru/intensive/adaptive"
-          ><img
-            src="img/logo.png"
-            width="27"
-            height="34"
-            alt="Логотип htmlacademy"
-          />HTML Academy</a
-        >
+          >HTML Academy<img
+          src="img/htmlacademy.svg"
+          width="27"
+          height="34"
+          alt="Логотип htmlacademy"
+        /></a>
+      </div>
       </div>
     </footer>
   </body>
