@@ -1,0 +1,54 @@
+// main: style.less
+.program-item {
+  width: 280px;
+  margin-left: 20px;
+  background-color: @basic-grey;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.progrem-item__container {
+  margin-top: 30px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.program-item__name {
+  font-family: @family-name;
+  font-size: 24px;
+  line-height: 37px;
+  color: @secondary;
+  text-transform: uppercase;
+  padding-left: 91px;
+
+  &--slim {
+    width: 50px;
+    height: 53px;
+    background: url("@{img}icon-cat-slim.svg") no-repeat;
+  }
+
+  &--weight {
+    background: url("@{img}icon-cat-pro.svg") no-repeat;
+  }
+}
+
+.program-item__text {
+  font-family: @family-name2;
+  font-size: 14px;
+  line-height: 18px;
+  color: @color-text;
+}
+
+.program-item__link {
+  color: @secondary;
+  text-decoration: none;
+  font-family: @family-name;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  &--arrow {
+    background: url("@{img}icon-right-arrow-long.svg") no-repeat;
+  }
+}

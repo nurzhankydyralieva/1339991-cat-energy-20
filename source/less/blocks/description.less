@@ -1,0 +1,46 @@
+// main: style.less
+.description {
+  color: @secondary;
+
+  &--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    margin-left: 20px;
+  }
+}
+
+.description__title {
+  color: @secondary;
+  font-family: @family-name;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.description-list {
+  list-style: none;
+  padding-left: 80px;
+}
+
+.description-list__item {
+  font-family: @family-name2;
+  font-size: 14px;
+  line-height: 18px;
+  color: @color-text;
+
+  &--advantage {
+    background: url("@{img}advantage-leaf@1x.png") no-repeat;
+  }
+
+  &--powder {
+    background: url("@{img}advantage-powder@1x.png") no-repeat;
+  }
+
+  &--dining {
+    background: url("@{img}advantage-dining@1x.png") no-repeat;
+  }
+
+  &--clock {
+    background: url("@{img}advantage-clock@1x.png") no-repeat;
+  }
+}

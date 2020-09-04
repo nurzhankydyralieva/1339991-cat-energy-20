@@ -55,10 +55,10 @@
 
     <main class="page-main">
       <section>
-        <div  class="programs">
-          <h1>Функциональное питание для котов</h1>
-          <p>занялся собой? займись котом!</p>
-          <a class="food" href="form.html">Подобрать программу</a>
+        <div  class="programs programs--wrapper">
+          <h1 class="programs__title">Функциональное питание для котов</h1>
+          <p class="programs__text programs__text--image">занялся собой? займись котом!</p>
+          <a class="programs__food" href="form.html">Подобрать программу</a>
       </div>
       </section>
 
@@ -72,7 +72,7 @@
               лазить<br />по деревьям? Пора на диету! Cat<br />Energy Slim
               поможет вашему<br />питомцу сбросить лишний вес.
             </p>
-            <a class="program-item__link" href="catalog.html">
+            <a class="program-item__link program-item__link--arrow" href="catalog.html">
               Каталог slim
             </a>
             </div>
@@ -86,7 +86,7 @@
             Cat Energy Pro поможет<br />вашему коту нарастить<br />необходимые
             мышцы!
           </p>
-          <a class="program-item__link" href="catalog.html">
+          <a class="program-item__link program-item__link--arrow" href="catalog.html">
             Каталог pro
           </a>
           </div>
@@ -94,28 +94,29 @@
       </section>
 
       <section>
-        <h3 class="description">Как это работает</h3>
-        <div class="feature">
-          <ul class="features-list description-list">
-            <li class="description-list__item">
+        <div class="description--wrapper">
+        <h3 class="description__title">Как это работает</h3>
+        <div class="description">
+          <ul class="description-list">
+            <li class="description-list__item description-list__item--advantage">
               <p>
                 Функциональное питание<br />содержит только полезные<br />питательные
                 вещества.
               </p>
             </li>
-            <li class="description-list__item">
+            <li class="description-list__item description-list__item--powder">
               <p>
                 Выпускается в виде порошка,<br />который нужно лишь залить<br />кипятком
                 и готово.
               </p>
             </li>
-            <li class="description-list__item">
+            <li class="description-list__item description-list__item--dining">
               <p>
                 Замените один-два приема<br />обычной еды на наше<br />функциональное
                 питание.
               </p>
             </li>
-            <li class="description-list__item">
+            <li class="description-list__item description-list__item--clock">
               <p>
                 Уже через месяц<br />наслаждайтесь изменениями<br />к лучшему
                 вашего питомца!
@@ -123,21 +124,25 @@
             </li>
           </ul>
         </div>
+        </div>
       </section>
+
       <section>
-        <div class="feature-description">
-        <h3 class="description">Живой пример</h3>
+        <div class="description--wrapper">
+        <div class="description-feature">
+        <h3 class="description__title">Живой пример</h3>
         <p>
           Борис сбросил 5 кг за 2 месяца, просто<br />
           заменив свой обычный корм на Cat<br />Energy Slim. Отличный результат
           без<br />изнуряющих тренировок! При этом он не<br />менял свои
           привычек и по-прежнему<br />спит по 16 часов в день.
         </p>
-        <span class="kg">5 кг</span>
-        <span>снижение веса</span>
-        <span class="kg">60 дней</span>
-        <span>затрачено времени</span>
-        <p class="cost">затраты на питание: 15 000 руб.</p>
+
+        <span class="description__item">5 кг</span>
+        <span class="description__text">снижение веса</span>
+        <span class="description__item">60 дней</span>
+        <span class="description__text">затрачено времени</span>
+        <p class="description__value">затраты на питание: 15 000 руб.</p>
         <img
           src="./img/before-mobile@1x.png"
           width="311"
@@ -154,6 +159,7 @@
             </div>
           </div>
           </div>
+        </div>
         </div>
       </section>
     </main>
@@ -186,12 +192,12 @@
             >
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Фейсбук</a>
-          </li>
-          <li class="social__item">
             <a class="social__link social__link--instagram" href="#"
               >Инстаграм</a
             >
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Фейсбук</a>
           </li>
         </ul>
       </div>
@@ -199,12 +205,13 @@
         <a
           class="copyright__text"
           href="https://htmlacademy.ru/intensive/adaptive"
-          >HTML Academy<img
+          >HTML Academy</a>
+          <img
           src="img/htmlacademy.svg"
           width="27"
           height="34"
           alt="Логотип htmlacademy"
-        /></a>
+        />
       </div>
       </div>
     </footer>
