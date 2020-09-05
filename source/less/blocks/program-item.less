@@ -17,18 +17,34 @@
 .program-item__name {
   font-family: @family-name;
   font-size: 24px;
-  line-height: 37px;
   color: @secondary;
   text-transform: uppercase;
   padding-left: 91px;
 
-  &--slim {
+  &--slim,
+  &--weight {
+    position: relative;
+    background-color: @basic-green;
+    border-radius: 50%;
+    width: 0;
+    height: 50px;
+  }
+
+  &--slim::before {
+    content: "";
+    position: absolute;
     width: 50px;
-    height: 53px;
+    height: 50px;
+    left: 26px;
     background: url("@{img}icon-cat-slim.svg") no-repeat;
   }
 
-  &--weight {
+  &--weight::before {
+    content: "";
+    position: absolute;
+    width: 67px;
+    height: 28px;
+    left: 11px;
     background: url("@{img}icon-cat-pro.svg") no-repeat;
   }
 }
@@ -38,9 +54,12 @@
   font-size: 14px;
   line-height: 18px;
   color: @color-text;
+  padding-bottom: 23px;
+  border-bottom: 1px solid @border-grey;
 }
 
 .program-item__link {
+  position: relative;
   color: @secondary;
   text-decoration: none;
   font-family: @family-name;
@@ -48,7 +67,13 @@
   line-height: 16px;
   text-transform: uppercase;
 
-  &--arrow {
+  &--arrow::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 12px;
     background: url("@{img}icon-right-arrow-long.svg") no-repeat;
+    top: 7px;
+    right: -40px;
   }
 }

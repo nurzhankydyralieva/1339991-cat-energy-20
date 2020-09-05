@@ -19,28 +19,37 @@
 
 .description-list {
   list-style: none;
-  padding-left: 80px;
 }
 
 .description-list__item {
+  position: relative;
   font-family: @family-name2;
   font-size: 14px;
   line-height: 18px;
   color: @color-text;
+  padding-left: 40px;
 
-  &--advantage {
-    background: url("@{img}advantage-leaf@1x.png") no-repeat;
+  &--advantage::before {
+    .content();
+    background: url("@{img}advantage-leaf@1x.png") 5px 5px @basic-green
+      no-repeat;
   }
 
-  &--powder {
-    background: url("@{img}advantage-powder@1x.png") no-repeat;
+  &--powder::before {
+    .content();
+    background: url("@{img}advantage-powder@1x.png") 5px 5px @basic-green
+      no-repeat;
   }
 
-  &--dining {
-    background: url("@{img}advantage-dining@1x.png") no-repeat;
+  &--dining::before {
+    .content();
+    background: url("@{img}advantage-dining@1x.png") 5px 5px @basic-green
+      no-repeat;
   }
 
-  &--clock {
-    background: url("@{img}advantage-clock@1x.png") no-repeat;
+  &--clock::before {
+    .content();
+    background: url("@{img}advantage-clock@1x.png") 5px 5px @basic-green
+      no-repeat;
   }
 }
