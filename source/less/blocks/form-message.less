@@ -1,53 +1,94 @@
 // main: style.less
-.form-message h1 {
+.form-message {
+  background-color: @primary;
+
+  &--wrapper {
+    width: 280px;
+    margin-left: 20px;
+  }
+}
+
+.form-message__title {
   color: @secondary;
+  font-family: @family-name;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
 }
 
-.message-form__title {
-  color: @secondary;
-  font-style: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  list-style: none;
+.form-message__item {
+  margin: 0;
+  border: 0;
+  padding: 0;
 }
 
-.message-input,
-.comment-input {
+.form-message__text {
+  font-family: @family-name;
+  font-size: 14px;
+  line-height: 18px;
+  color: @secondary;
+  text-transform: uppercase;
+}
+
+.message-breadcrumbs {
+  font-family: @family-name;
   font-size: 16px;
   line-height: 18px;
   color: @color-text;
   text-transform: uppercase;
   list-style: none;
+  padding: 0;
 }
 
-.filter-radio,
-.filter-checkbox {
-  font-size: 16px;
-  line-height: 18px;
-  color: @special_dark-grey;
-  text-transform: uppercase;
-  list-style: none;
+.message-input {
+  padding-bottom: 13px;
 }
 
-.data {
+.form-message__item-title,
+.comment-input__title {
+  font-family: @family-name;
   font-size: 24px;
   line-height: 26px;
   color: @secondary;
 }
 
+.comment-input {
+  font-size: 16px;
+  line-height: 18px;
+  color: @color-text;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  margin: 0;
+  list-style: none;
+}
+
+.comment-input__textarea,
+.data {
+  font-size: 24px;
+  line-height: px;
+  color: @secondary;
+  padding-bottom: 15px;
+  margin: 0;
+  list-style: none;
+}
+
+.filter-checkbox {
+  font-size: 16px;
+  line-height: 18px;
+  list-style: none;
+}
+
 .message-button {
   color: @primary;
-  padding-top: 15px;
-  padding-right: 75px;
-  padding-bottom: 15px;
-  padding-left: 75px;
-  font-size: 14px;
-  line-height: 18px;
+  padding-top: 7px;
+  padding-right: 44px;
+  padding-bottom: 7px;
+  padding-left: 44px;
+  font-size: 16px;
+  line-height: 20px;
   text-decoration: none;
   text-transform: uppercase;
   background: @basic-green;
   border: none;
+  box-sizing: border-box;
 }

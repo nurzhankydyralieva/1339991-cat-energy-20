@@ -1,0 +1,25 @@
+// main: style.less
+.filter-breadcrumbs {
+  display: block;
+}
+
+.filter-radio {
+  position: relative;
+  margin-right: 45px;
+
+  &--active::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: url("@{img}radioon.png") no-repeat;
+  }
+
+  &--button::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: url("@{img}radiooff.png") no-repeat;
+  }
+}

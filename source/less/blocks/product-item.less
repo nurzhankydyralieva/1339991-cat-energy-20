@@ -1,17 +1,18 @@
 // main: style.less
 .product-item {
-  display: flex;
-  flex-wrap: wrap;
-  width: 72px;
+  display: block;
+
+  &--wrapper {
+    width: 140px;
+  }
 }
 
-h1 {
-  color: @secondary;
-  font-size: 36px;
-  line-height: 36px;
+.product-item__image {
+  padding-right: 20px;
 }
 
 .product-item__name {
+  font-family: @family-name;
   font-size: 16px;
   line-height: 20px;
   color: @special_dark-grey;
@@ -19,92 +20,74 @@ h1 {
   text-decoration: none;
 }
 
-tr {
+.product-item__table {
+  width: 140px;
+  justify-content: space-between;
+  font-family: @family-name2;
   font-size: 12px;
   line-height: 16px;
-  font-style: normal;
   color: @color-text;
 }
 
-.button {
+.product-item__button {
+  font-family: @family-name;
   color: @primary;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: @basic-green;
   padding-top: 7px;
   padding-right: 109px;
   padding-bottom: 7px;
   padding-left: 109px;
-  font-size: 14px;
-  line-height: 18px;
-  text-decoration: none;
-  background: @basic-green;
 }
 
-.catalog-all {
-  display: block;
+.product-item__all-title {
+  font-family: @family-name;
+  font-size: 24px;
+  line-height: 24px;
+  color: @secondary;
+  margin-left: 20px;
 }
 
-h2 {
-  color: @color-text2;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
-
-.button-all {
-  color: @color-text;
+.product-item__all-text {
+  display: flex;
+  flex-wrap: wrap;
   width: 280px;
-  height: 40px;
-  padding-top: 20px;
-  padding-right: 94px;
-  padding-bottom: 20px;
-  padding-left: 94px;
-  border: none;
-  font-size: 16px;
-  line-height: 0px;
-  text-transform: uppercase;
+  justify-content: space-between;
+  margin-left: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid @border-grey3;
 }
 
-.product-item__all {
-  text-align: start;
-
-  h2 {
-    font-size: 24px;
-    list-style: 24px;
-    color: @secondary;
-  }
-
-  p {
-    font-size: 16px;
-    line-height: 16px;
-    color: @special_dark-grey;
-  }
-}
-
-.product-item__title p {
+.product-item__all-desc {
+  width: 100%;
+  font-family: @family-name;
   font-size: 16px;
   line-height: 16px;
   color: @special_dark-grey;
   text-transform: uppercase;
 }
 
-.span {
-  width: 280px;
-  color: @color-text;
+.product-item__all-pack {
+  font-family: @family-name2;
   font-size: 14px;
   line-height: 14px;
+  color: @color-text;
+  padding-bottom: 15px;
 }
 
-.product-item__button {
-  color: @primary;
+.product-item__order {
   width: 280px;
-  height: 40px;
-  padding-top: 20px;
-  padding-right: 109px;
-  padding-bottom: 20px;
-  padding-left: 109px;
+  height: 289px;
+  margin-left: 20px;
+  background: url("@{img}gift-photo-mobile@1x.jpg") no-repeat;
+}
+
+.product-item__order-title {
+  font-family: @family-name2;
   font-size: 16px;
-  line-height: 0px;
+  line-height: 20px;
+  color: @primary;
   text-decoration: none;
-  text-transform: uppercase;
-  background: @basic-green;
-  box-sizing: border-box;
 }

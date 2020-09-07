@@ -46,21 +46,21 @@
       </nav>
     </header>
     <main>
-      <section class="form-message">
-        <h1>Подбор программы</h1>
+      <section class="form-message form-message--wrapper">
+        <h1 class="form-message__title">Подбор программы</h1>
         <form
           class="message-form"
           action="https://echo.htmlacademy.ru"
           method="post"
         >
-          <fieldset>
-            <legend class="message-form__title">
+          <fieldset class="form-message__item">
+            <legend class="form-message__text">
               заполните анкету и мы подберем<br />программу питания для вашего
               кота
             </legend>
             <ul class="message-breadcrumbs">
               <li class="message-input">
-                <label for="name">Имя:</label>
+                <label for="name">Имя:*</label>
                 <input
                   type="text"
                   name="catName"
@@ -70,7 +70,7 @@
                 />
               </li>
               <li class="message-input">
-                <label for="weight">Вес(кг):</label>
+                <label for="weight">Вес(кг):*</label>
                 <input
                   type="text"
                   name="catWeight"
@@ -91,10 +91,10 @@
               </li>
             </ul>
             <div class="filter-breadcrumbs">
-              <ul class="breadcrumbs">
-                <li class="filter-radio">
+              <ul class="message-breadcrumbs breadcrumbs">
+                <li class="filter-radio filter-radio--active">
                   <input
-                    class="filter-radio-input"
+                    class="visually-hidden filter-radio-input"
                     type="radio"
                     name="grid"
                     value="weightLost"
@@ -103,9 +103,9 @@
                   />
                   <label for="weightLost">Похудение</label>
                 </li>
-                <li class="filter-radio">
+                <li class="filter-radio filter-radio--button">
                   <input
-                    class="filter-radio-input"
+                    class="visually-hidden filter-radio-input"
                     type="radio"
                     name="grid"
                     value="weightGain"
@@ -113,9 +113,9 @@
                   />
                   <label for="weightGain">Набор массы</label>
                 </li>
-                <li class="filter-radio">
+                <li class="filter-radio filter-radio--button">
                   <input
-                    class="filter-radio-input"
+                    class="visually-hidden filter-radio-input"
                     type="radio"
                     name="grid"
                     value="advice"
@@ -126,13 +126,13 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset>
-            <legend class="data">
+          <fieldset class="form-message__item">
+            <legend class="form-message__item-title">
               Контактные данные<br />(владельца кота)
             </legend>
             <ul>
               <li class="comment-input">
-                <label for="email">E-mail:</label>
+                <label for="email">E-mail:*</label>
                 <input
                   type="text"
                   name="catEmail"
@@ -142,7 +142,7 @@
                 />
               </li>
               <li class="comment-input">
-                <label for="tell">Телефон:</label>
+                <label for="tell">Телефон:*</label>
                 <input
                   type="number"
                   name="catTell"
@@ -151,7 +151,8 @@
                   required
                 />
               </li>
-              <li class="comment-input data">
+
+              <li class="comment-input__textarea">
                 <label for="comment-field">Комментарий</label>
                 <textarea
                   class="message-textarea"
@@ -162,11 +163,12 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="breadcrumbs-filter-checkbox">
+          <fieldset class="form-message__item breadcrumbs-filter-checkbox">
             <legend class="data">Дополнительно</legend>
             <ul>
               <li class="filter-checkbox">
                 <input
+                  class="visually-hidden"
                   type="checkbox"
                   name="product"
                   id="product-field"
@@ -175,15 +177,30 @@
                 <label for="field">Сахарозаменитель</label>
               </li>
               <li class="filter-checkbox">
-                <input type="checkbox" name="water" id="water-field" />
+                <input
+                  class="visually-hidden"
+                  type="checkbox"
+                  name="water"
+                  id="water-field"
+                />
                 <label for="field">Питьевая вода</label>
               </li>
               <li class="filter-checkbox">
-                <input type="checkbox" name="milk" id="milk-field" />
+                <input
+                  class="visually-hidden"
+                  type="checkbox"
+                  name="milk"
+                  id="milk-field"
+                />
                 <label for="field">Молоко</label>
               </li>
               <li class="filter-checkbox">
-                <input type="checkbox" name="vitamin" id="field" />
+                <input
+                  class="visually-hidden"
+                  type="checkbox"
+                  name="vitamin"
+                  id="field"
+                />
                 <label for="field">Витамины</label>
               </li>
             </ul>
@@ -195,7 +212,7 @@
     </main>
 
     <footer class="page-footer page-footer__address">
-      <div class="page-footer__map">
+      <div class="page-footer__address">
         <p class="page-footer__slogan">
           Приглашаем<br />к сотрудничеству<br />дилеров!
         </p>
@@ -203,49 +220,55 @@
           ул. Большая<br />Конюшенная, д. 19/8<br />Санкт-Петербург
         </p>
       </div>
-      <img src="./img/location.png" width="320" height="362" alt="Карта" />
-      <div class="page-footer__container">
-        <div class="page-footer__logo">
-          <a>
+
+      <div class="page-footer__map">
+        <img src="./img/location.png" width="320" height="362" alt="Карта" />
+
+        <div class="page-footer__container">
+          <div class="page-footer__logo">
+            <a>
+              <img
+                src="./img/logo-footer.svg"
+                width="202"
+                height="60"
+                alt="Логотип Кэт энерджи"
+              />
+            </a>
+          </div>
+
+          <div class="social page-footer__social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="#"
+                  ><span class="visually-hidden">Вконтакте</span></a
+                >
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="#"
+                  ><span class="visually-hidden">Инстаграм</span></a
+                >
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#"
+                  ><span class="visually-hidden">Фейсбук</span></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="copyright page-footer__copyright">
+            <a
+              class="copyright__text"
+              href="https://htmlacademy.ru/intensive/adaptive"
+              >HTML Academy</a
+            >
             <img
-              src="./img/logo-footer.svg"
-              width="202"
-              height="60"
-              alt="Логотип Кэт энерджи"
+              src="img/htmlacademy.svg"
+              width="27"
+              height="34"
+              alt="Логотип htmlacademy"
             />
-          </a>
-        </div>
-        <div class="social page-footer__social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="#"
-                ><span class="visually-hidden">Вконтакте</span></a
-              >
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="#"
-                ><span class="visually-hidden">Инстаграм</span></a
-              >
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#"
-                ><span class="visually-hidden">Фейсбук</span></a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="copyright page-footer__copyright">
-          <a
-            class="copyright__text"
-            href="https://htmlacademy.ru/intensive/adaptive"
-            >HTML Academy</a
-          >
-          <img
-            src="img/htmlacademy.svg"
-            width="27"
-            height="34"
-            alt="Логотип htmlacademy"
-          />
+          </div>
         </div>
       </div>
     </footer>

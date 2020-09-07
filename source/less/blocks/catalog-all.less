@@ -1,0 +1,48 @@
+// main: style.less
+.catalog-all {
+  position: relative;
+
+  &--wrapper {
+    width: 280px;
+
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  &--button::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: url("@{img}plus.png") no-repeat;
+  }
+}
+
+.button-all {
+  padding-top: 20px;
+  padding-right: 94px;
+  padding-bottom: 20px;
+  padding-left: 94px;
+  border: none;
+  font-family: @family-name;
+  font-size: 16px;
+  line-height: 0px;
+  color: @color-text;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.catalog-all__title {
+  font-family: @family-name;
+  font-size: 16px;
+  line-height: 20px;
+  color: @color-text2;
+  padding-top: 80px;
+}
+
+.catalog-all__text {
+  font-family: @family-name2;
+  font-size: 12px;
+  line-height: 16px;
+  color: @color-text;
+}
