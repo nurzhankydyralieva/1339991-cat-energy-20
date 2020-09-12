@@ -157,14 +157,37 @@
               height="232"
               alt="Cat before and after"
             />
-            <div class="slider slider__controls">
-              <div class="slider-controls">
-                <div class="slider__scale">
-                  <div class="slider__bar">
-                    <div class="slider__toggle slider__toggle--min">Было</div>
-                    <div class="slider__toggle slider__toggle--max">Стало</div>
-                  </div>
+          </div>
+          <div class="slider slider__controls">
+            <div class="slider-controls">
+              <div class="slider__scale">
+                <label for="min">Было</label>
+                <input
+                  class="visually-hidden"
+                  type="text"
+                  name="weight-min"
+                  id="min"
+                  value=""
+                />
+                <div class="slider__toggle">
+                  <button class="slider__toggle--min" type="button">
+                    <span class="visually-hidden">Минимальная</span>
+                  </button>
+                  <button class="slider__toggle--max" type="button">
+                    <span class="visually-hidden">Максимальная</span>
+                  </button>
                 </div>
+                <label for="max">Стало</label>
+                <input
+                  class="visually-hidden"
+                  type="text"
+                  name="weight-max"
+                  id="max"
+                  value=""
+                />
+              </div>
+
+
               </div>
             </div>
           </div>
